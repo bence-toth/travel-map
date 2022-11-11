@@ -10,10 +10,10 @@
   height: 90%;
 }
 
-.map path[data-visited="false"] {
+.map path[data-is-visited="false"] {
   fill: var(--country-not-visited);
 }
 
-.map path[data-visited="true"] {
+.map path[data-is-visited="true"] {
   fill: var(--country-visited);
 }

@@ -18,7 +18,7 @@ const Map = ({ travels }: MapProps) => {
             d={country.d}
             id={country.code}
             data-title={country.name}
-            data-visited={travels.some(
+            data-is-visited={travels.some(
               (travel) => travel.countryCode === country.code
             )}
           />

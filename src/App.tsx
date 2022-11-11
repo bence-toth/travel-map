@@ -1,5 +1,9 @@
 import Map from "./Map";
 
+export interface Travel {
+  countryCode: string;
+}
+
 const App = () => (
   <Map
     travels={[

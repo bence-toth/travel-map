@@ -1,8 +1,14 @@
 import countries from "./countries";
 
+import type { Travel } from "./App";
+
 import "./Map.css";
 
-const Map = ({ travels }) => {
+interface MapProps {
+  travels: Travel[];
+}
+
+const Map = ({ travels }: MapProps) => {
   return (
     <div className="map-wrapper">
       <svg className="map" viewBox="0 0 1009.6727 665.96301">

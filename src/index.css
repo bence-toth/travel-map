@@ -9,3 +9,11 @@ body,
 #root {
   height: 100%;
 }
+
+body {
+  --background: black;
+  --country-visited: pink;
+  --country-not-visited: hsl(0deg 0% 20%);
+
+  background-color: var(--background);
+}

@@ -9,3 +9,11 @@ body,
 #root {
   height: 100%;
 }
+
+body {
+  --color-background: black;
+  --color-active: #2979ff;
+  --color-disabled: #303030;
+
+  background-color: var(--color-background);
+}

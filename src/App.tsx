@@ -1,23 +1,7 @@
 import Map from "./Map";
 
-export interface Travel {
-  countryCode: string;
-}
+import travels from "./travels";
 
-const App = () => (
-  <Map
-    travels={[
-      {
-        countryCode: "ZM",
-      },
-      {
-        countryCode: "TW",
-      },
-      {
-        countryCode: "SK",
-      },
-    ]}
-  />
-);
+const App = () => <Map travels={travels} />;
 
 export default App;

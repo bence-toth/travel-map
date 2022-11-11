@@ -1,6 +1,6 @@
 import countries from "./countries";
 
-import type { Travel } from "./App";
+import type { Travel } from "./travels";
 
 import "./Map.css";
 

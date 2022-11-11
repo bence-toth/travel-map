@@ -10,10 +10,10 @@
   height: 90%;
 }
 
-.map path[data-is-visited="false"] {
-  fill: var(--country-not-visited);
+.map path[data-is-visited="true"] {
+  fill: var(--color-active);
 }
 
-.map path[data-is-visited="true"] {
-  fill: var(--country-visited);
+.map path[data-is-visited="false"] {
+  fill: var(--color-disabled);
 }

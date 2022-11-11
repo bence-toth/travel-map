@@ -11,9 +11,9 @@ body,
 }
 
 body {
-  --background: black;
-  --country-visited: pink;
-  --country-not-visited: hsl(0deg 0% 20%);
+  --color-background: black;
+  --color-active: #2979ff;
+  --color-disabled: #303030;
 
-  background-color: var(--background);
+  background-color: var(--color-background);
 }

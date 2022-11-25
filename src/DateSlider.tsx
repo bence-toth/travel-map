@@ -11,8 +11,10 @@ interface DateSliderProps {
 
 const now = Date.now();
 
-const dateFormatter = new Intl.DateTimeFormat("en-GB", {
-  dateStyle: "long",
+const dateFormatter = new Intl.DateTimeFormat("en-US", {
+  day: "2-digit",
+  month: "short",
+  year: "numeric",
 });
 
 const DateSlider = ({
@@ -20,7 +22,14 @@ const DateSlider = ({
   onHandleDateChange,
   firstTravelDate,
 }: DateSliderProps) => {
-  const formattedDate = useMemo(() => dateFormatter.format(date), [date]);
+  const formattedDate = useMemo(() => {
+    const parts = dateFormatter.formatToParts(date);
+    const day = parts.find((part) => part.type === "day")?.value ?? "";
+    const month = parts.find((part) => part.type === "month")?.value ?? "";
+    const year = parts.find((part) => part.type === "year")?.value ?? "1";
+    return `${day} ${month} ${year}`;
+  }, [date]);
+
   return (
     <>
       <div className="date-slider-wrapper">

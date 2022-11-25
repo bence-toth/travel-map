@@ -11,7 +11,7 @@
 }
 
 .map path[data-is-visited="true"] {
-  fill: var(--color-active);
+  fill: var(--color-foreground);
 }
 
 .map path[data-is-visited="false"] {

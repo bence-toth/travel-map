@@ -1,0 +1,50 @@
+.date-slider-wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1em;
+}
+
+.date-slider {
+  appearance: none;
+  width: 100%;
+  background: var(--color-disabled);
+  height: 0.25em;
+  border-radius: 0.125em;
+  cursor: pointer;
+}
+
+.date-slider::-webkit-slider-thumb {
+  appearance: none;
+  height: 1.25em;
+  width: 1.25em;
+  border-radius: 50%;
+  background: var(--color-foreground);
+  cursor: grab;
+}
+
+.date-slider::-webkit-slider-thumb:active {
+  cursor: grabbing;
+}
+
+.date-slider::-webkit-slider-runnable-track {
+  appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+
+.date-display-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 1em;
+}
+
+.date-display {
+  font-family: "Azeret Mono", monospace;
+  color: var(--color-foreground);
+  font-size: 1.5em;
+  letter-spacing: -0.05em;
+}

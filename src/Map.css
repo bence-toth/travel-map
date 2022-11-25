@@ -10,8 +10,12 @@
   height: 90%;
 }
 
+.map path {
+  transition: fill 0.2s;
+}
+
 .map path[data-is-visited="true"] {
-  fill: var(--color-active);
+  fill: var(--color-foreground);
 }
 
 .map path[data-is-visited="false"] {

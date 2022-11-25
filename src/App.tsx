@@ -10,7 +10,7 @@ const App = () => {
 
   return (
     <>
-      <Map travels={travels} />
+      <Map travels={travels} date={date} />
       <DateSlider
         date={date}
         onHandleDateChange={onHandleDateChange}

@@ -1,6 +1,8 @@
 import { useMemo } from "react";
 import type { ChangeEvent } from "react";
 
+import { oneDay, now } from "./useDate";
+
 import "./DateSlider.css";
 
 interface DateSliderProps {
@@ -8,8 +10,6 @@ interface DateSliderProps {
   onHandleDateChange: (event: ChangeEvent<HTMLInputElement>) => void;
   firstTravelDate: number;
 }
-
-const now = Date.now();
 
 const dateFormatter = new Intl.DateTimeFormat("en-US", {
   day: "2-digit",
@@ -40,7 +40,7 @@ const DateSlider = ({
           max={now}
           value={date}
           onChange={onHandleDateChange}
-          step={24 * 60 * 60 * 1000}
+          step={oneDay}
         />
       </div>
       <div className="date-display-wrapper">

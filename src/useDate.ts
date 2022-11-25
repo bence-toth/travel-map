@@ -8,7 +8,7 @@ const oneDay = 24 * 60 * 60 * 1000;
 const now = Date.now();
 
 const useDate = () => {
-  const [date, setDate] = useState(travels[0].date.getTime());
+  const [date, setDate] = useState(travels[0].date);
 
   const onHandleDateChange = useCallback(
     (event: ChangeEvent<HTMLInputElement>) => {
@@ -17,7 +17,7 @@ const useDate = () => {
     []
   );
 
-  const firstTravelDate = useMemo(() => travels[0].date.getTime(), []);
+  const firstTravelDate = useMemo(() => travels[0].date, []);
 
   useEffect(() => {
     const onHandleWindowWheel = (event: WheelEvent) => {
@@ -41,3 +41,5 @@ const useDate = () => {
 };
 
 export default useDate;
+
+export { now, oneDay };

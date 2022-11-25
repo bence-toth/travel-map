@@ -1,0 +1,12 @@
+.date-slider-wrapper {
+  position: fixed;
+  top: 0;
+}
+
+.date-slider {
+  color: blue;
+}
+
+.date-display {
+  color: white;
+}

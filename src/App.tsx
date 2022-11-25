@@ -1,31 +1,31 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useMemo } from "react";
 import type { ChangeEvent } from "react";
 
 import Map from "./Map";
 
 import travels from "./travels";
-
-const now = Date.now();
+import DateSlider from "./DateSlider";
 
 const App = () => {
   const [date, setDate] = useState(travels[0].date.getTime());
 
-  const updateDate = useCallback((event: ChangeEvent<HTMLInputElement>) => {
-    setDate(Number(event.target.value));
-  }, []);
+  const onHandleDateChange = useCallback(
+    (event: ChangeEvent<HTMLInputElement>) => {
+      setDate(Number(event.target.value));
+    },
+    []
+  );
+
+  const firstTravelDate = useMemo(() => travels[0].date.getTime(), []);
 
   return (
     <>
       <Map travels={travels} />
-      <input
-        type="range"
-        min={travels[0].date.getTime()}
-        max={now}
-        value={date}
-        onChange={updateDate}
-        step={24 * 60 * 60 * 1000}
+      <DateSlider
+        date={date}
+        onHandleDateChange={onHandleDateChange}
+        firstTravelDate={firstTravelDate}
       />
-      <span style={{ color: "white" }}>{date}</span>
     </>
   );
 };

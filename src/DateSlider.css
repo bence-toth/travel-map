@@ -1,12 +1,19 @@
 .date-slider-wrapper {
   position: fixed;
-  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1em;
 }
 
 .date-slider {
-  color: blue;
+  width: 100%;
 }
 
-.date-display {
+.date-display-wrapper {
+  position: fixed;
   color: white;
+  top: 0;
+  left: 0;
+  padding: 1em;
 }

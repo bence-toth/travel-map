@@ -3,7 +3,9 @@
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 1em;
+  padding-inline: 1em;
+  padding-block: 0.5em;
+  height: 3em;
 }
 
 .date-slider {

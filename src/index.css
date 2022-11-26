@@ -18,6 +18,7 @@ body {
   --color-foreground: hsl(0deg 0% 10%);
 
   background-color: var(--color-background);
+  overscroll-behavior: contain;
 }
 
 @media (prefers-color-scheme: dark) {

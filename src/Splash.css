@@ -18,6 +18,7 @@
   font-size: 24px;
   margin-bottom: 1.5em;
   line-height: 1;
+  font-weight: inherit;
 }
 
 .splash p {

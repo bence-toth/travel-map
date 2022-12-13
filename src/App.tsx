@@ -8,9 +8,11 @@ import useDate from "./useDate";
 import travels from "./travels";
 
 const App = () => {
-  const { date, onHandleDateChange, firstTravelDate, mapRef } = useDate();
-
   const { shouldShowSplash, onHideSplash } = useSplash();
+
+  const { date, onHandleDateChange, firstTravelDate, mapRef } = useDate({
+    shouldShowSplash,
+  });
 
   if (shouldShowSplash) {
     return <Splash onHideSplash={onHideSplash} />;

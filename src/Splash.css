@@ -1,0 +1,46 @@
+.splash {
+  margin-inline: auto;
+  max-width: 800px;
+  padding: 2em;
+  display: grid;
+  min-height: 100%;
+  grid-template-rows: 1fr 80px;
+  gap: 2em;
+  margin-bottom: 300px;
+  font-family: "Playfair Display", serif;
+}
+
+.splash section {
+  color: var(--color-foreground);
+}
+
+.splash h1 {
+  font-size: 24px;
+  margin-bottom: 1.5em;
+  line-height: 1;
+  font-weight: inherit;
+}
+
+.splash p {
+  font-size: 18px;
+  margin-bottom: 1.5em;
+  line-height: 1.75;
+}
+
+.splash-button-wrapper {
+  font-size: 20px;
+}
+
+.splash button {
+  height: 3em;
+  width: 100%;
+  background-color: transparent;
+  color: var(--color-foreground);
+  border: 2px solid var(--color-foreground);
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: 2px;
+}

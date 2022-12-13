@@ -1,12 +1,20 @@
+import Splash from "./Splash";
 import Map from "./Map";
-
-import travels from "./travels";
 import DateSlider from "./DateSlider";
 
+import useSplash from "./useSplash";
 import useDate from "./useDate";
+
+import travels from "./travels";
 
 const App = () => {
   const { date, onHandleDateChange, firstTravelDate, mapRef } = useDate();
+
+  const { shouldShowSplash, onHideSplash } = useSplash();
+
+  if (shouldShowSplash) {
+    return <Splash onHideSplash={onHideSplash} />;
+  }
 
   return (
     <>

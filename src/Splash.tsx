@@ -9,9 +9,9 @@ const Splash = ({ onHideSplash }: SplashProps) => (
     <section>
       <h1>Dear Zsófi,</h1>
       <p>
-        I just wanted to let you know how much I appreciate you how important
-        you are to me. You are such a wonderful partner and I am so grateful to
-        have you in my life.
+        I just wanted to let you know how much I appreciate you and how
+        important you are to me. You are such a wonderful partner and I am so
+        grateful to have you in my life.
       </p>
       <p>
         We have been through a lot together over the past almost two years, and

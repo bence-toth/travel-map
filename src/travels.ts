@@ -55,6 +55,10 @@ const travels = [
     countryCode: "SE",
     withChild: true,
   },
+  {
+    date: new Date("2023-04-27").getTime(),
+    countryCode: "GB",
+  },
 ];
 
 export default travels;

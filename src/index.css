@@ -17,6 +17,7 @@ body {
   --color-background: hsl(0deg 0% 90%);
   --color-disabled: hsl(0deg 0% 75%);
   --color-foreground: hsl(0deg 0% 10%);
+  --color-accent: hsl(324deg 98% 47%);
 
   background-color: var(--color-background);
   overscroll-behavior: contain;

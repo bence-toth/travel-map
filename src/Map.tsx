@@ -25,6 +25,12 @@ const Map = ({ travels, date, mapRef }: MapProps) => {
               (travel) =>
                 travel.countryCode === country.code && travel.date <= date
             )}
+            data-is-visited-with-child={travels.some(
+              (travel) =>
+                travel.countryCode === country.code &&
+                travel.date <= date &&
+                travel.withChild === true
+            )}
           />
         ))}
       </svg>

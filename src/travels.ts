@@ -1,6 +1,7 @@
 export interface Travel {
   countryCode: string;
   date: number;
+  withChild?: boolean;
 }
 
 const travels = [
@@ -33,8 +34,9 @@ const travels = [
     countryCode: "EG",
   },
   {
-    date: new Date("2022-04-29").getTime(),
-    countryCode: "PL",
+    date: new Date("2022-06-08").getTime(),
+    countryCode: "DK",
+    withChild: true,
   },
   {
     date: new Date("2022-08-04").getTime(),
@@ -49,8 +51,13 @@ const travels = [
     countryCode: "TR",
   },
   {
-    date: new Date("2023-02-11").getTime(),
-    countryCode: "AL",
+    date: new Date("2023-01-14").getTime(),
+    countryCode: "SE",
+    withChild: true,
+  },
+  {
+    date: new Date("2023-04-27").getTime(),
+    countryCode: "GB",
   },
 ];
 

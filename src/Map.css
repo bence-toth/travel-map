@@ -19,6 +19,10 @@
   fill: var(--color-foreground);
 }
 
+.map path[data-is-visited="true"][data-is-visited-with-child="true"] {
+  fill: var(--color-accent);
+}
+
 .map path[data-is-visited="false"] {
   fill: var(--color-disabled);
 }

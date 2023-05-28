@@ -58,16 +58,18 @@ const travels = [
   {
     date: new Date("2023-02-12").getTime(),
     countryCode: "AL",
-    withChild: false,
   },
   {
     date: new Date("2023-02-14").getTime(),
     countryCode: "GR",
-    withChild: false,
   },
   {
     date: new Date("2023-04-27").getTime(),
     countryCode: "GB",
+  },
+  {
+    date: new Date("2023-06-09").getTime(),
+    countryCode: "DE",
   },
 ];
 

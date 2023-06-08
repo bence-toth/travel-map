@@ -68,7 +68,7 @@ const travels = [
     countryCode: "GB",
   },
   {
-    date: new Date("2023-06-09").getTime(),
+    date: new Date("2023-06-08").getTime(),
     countryCode: "DE",
   },
 ];

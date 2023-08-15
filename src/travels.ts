@@ -71,6 +71,11 @@ const travels = [
     date: new Date("2023-06-08").getTime(),
     countryCode: "DE",
   },
+  {
+    date: new Date("2023-07-19").getTime(),
+    countryCode: "HU",
+    withChild: true,
+  },
 ];
 
 export default travels;

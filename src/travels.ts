@@ -34,6 +34,10 @@ const travels = [
     countryCode: "EG",
   },
   {
+    date: new Date("2022-04-29").getTime(),
+    countryCode: "PL",
+  },
+  {
     date: new Date("2022-06-08").getTime(),
     countryCode: "DK",
     withChild: true,

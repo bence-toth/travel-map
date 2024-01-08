@@ -94,7 +94,7 @@ const travels = [
     countryCode: "CY",
   },
   {
-    date: new Date("2024-02-11").getTime(),
+    date: new Date("2024-02-12").getTime(),
     countryCode: "ES",
     withChild: true,
   },

@@ -89,6 +89,10 @@ const travels = [
     date: new Date("2023-11-09").getTime(),
     countryCode: "BG",
   },
+  {
+    date: new Date("2024-01-18").getTime(),
+    countryCode: "CY",
+  },
 ];
 
 export default travels;

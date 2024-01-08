@@ -7,11 +7,7 @@ const oneDay = 24 * 60 * 60 * 1000;
 
 const now = Date.now();
 
-interface UseDateParams {
-  shouldShowSplash: boolean;
-}
-
-const useDate = ({ shouldShowSplash }: UseDateParams) => {
+const useDate = () => {
   const [date, setDate] = useState(travels[0].date);
 
   const [lastTouch, setLastTouch] = useState<number | null>(null);
@@ -31,9 +27,6 @@ const useDate = ({ shouldShowSplash }: UseDateParams) => {
     const mapElement = mapRef.current;
 
     const onHandleWindowWheel = (event: WheelEvent) => {
-      if (shouldShowSplash) {
-        return;
-      }
       if (event.deltaY < 0 && date < now) {
         setDate((previousDate) => Math.min(previousDate + oneDay, now));
       } else if (event.deltaY > 0 && date > firstTravelDate) {
@@ -72,7 +65,7 @@ const useDate = ({ shouldShowSplash }: UseDateParams) => {
       mapElement?.addEventListener("touchstart", onHandleWindowTouchStart);
       mapElement?.removeEventListener("touchmove", onHandleWindowTouchMove);
     };
-  }, [date, firstTravelDate, lastTouch, shouldShowSplash]);
+  }, [date, firstTravelDate, lastTouch]);
 
   return { date, onHandleDateChange, firstTravelDate, mapRef };
 };

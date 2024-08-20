@@ -100,7 +100,7 @@ const travels = [
   },
   {
     date: new Date("2024-03-12").getTime(),
-    countryCode: "MR",
+    countryCode: "MU",
   },
   {
     date: new Date("2024-03-23").getTime(),
